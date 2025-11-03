@@ -24,7 +24,7 @@ export default function HomePage() {
 
   return (
     <div
-      className="min-h-screen text-white bg-gradient-to-b from-white via-white to-white relative overflow-hidden"
+      className="min-h-screen text-white bg-gradient-to-b from-[#0d0d0d] via-[#121212] to-[#1a1a1a] relative overflow-hidden"
       dir="rtl"
     >
       {/* Ambient magenta accents */}
@@ -40,13 +40,14 @@ export default function HomePage() {
           }}
         />
       </div>
+
       {/* Header */}
-      <header className="sticky top-0 z-50 backdrop-blur-xl border-b border-[#d12b8a]/20 bg-white/70">
+      <header className="sticky top-0 z-50 backdrop-blur-xl border-b border-[#d12b8a]/20 bg-[#0d0d0d]/70">
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <img
-                src="/ww.jpeg"
+                src="/_5g Mobile AR.jpg"
                 alt="logo"
                 className="h-9 w-9 rounded-full ring-2 ring-[#d12b8a]/60 shadow-sm"
               />
@@ -59,7 +60,7 @@ export default function HomePage() {
                 <Button
                   variant="ghost"
                   size="sm"
-                  className="text-[#d12b8a] hover:bg-[#d12b8a]/10"
+                  className="text-[#d12b8a] hover:bg-[#d12b8a]/20 hover:text-white"
                 >
                   سياسة الخصوصية
                 </Button>
@@ -68,7 +69,7 @@ export default function HomePage() {
                 <Button
                   variant="ghost"
                   size="sm"
-                  className="text-[#d12b8a] hover:bg-[#d12b8a]/10"
+                  className="text-[#d12b8a] hover:bg-[#d12b8a]/20 hover:text-white"
                 >
                   قواعد الأمان
                 </Button>
@@ -83,15 +84,15 @@ export default function HomePage() {
         {/* Profile */}
         <div className="flex flex-col items-center text-center mb-12">
           <Avatar className="h-24 w-24 mb-6 ring-4 ring-[#d12b8a] shadow-[0_0_40px_-10px] shadow-[#d12b8a]/60">
-            <AvatarImage src="/ww.jpeg" alt="الصورة الشخصية" />
+            <AvatarImage src="/_5g Mobile AR.jpg" alt="الصورة الشخصية" />
             <AvatarFallback className="text-3xl bg-[#d12b8a] text-white">
               أح
             </AvatarFallback>
           </Avatar>
-          <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight text-[#d12b8a]">
+          <h1 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white">
             مرحبًا بك 👋
           </h1>
-          <p className="mt-3 text-sm text-[#d12b8a]/80 max-w-prose">
+          <p className="mt-3 text-sm text-[#d12b8a]/70 max-w-prose">
             تحكم بخطك، تسوق وادفع بأسلوب جديد وسهل
           </p>
         </div>
@@ -100,7 +101,7 @@ export default function HomePage() {
         <div className="space-y-4 mb-12">
           {items.map(({ title, href, Icon }, i) => (
             <div key={i}>
-              <Card className="group relative border-[#d12b8a]/30 bg-[#d12b8a]/5 hover:bg-[#d12b8a]/10 transition-all duration-300 rounded-2xl overflow-hidden">
+              <Card className="group relative border-[#d12b8a]/30 bg-[#1f1f1f]/60 hover:bg-[#2a2a2a]/70 transition-all duration-300 rounded-2xl overflow-hidden">
                 <Link
                   href={href}
                   className="flex items-center justify-between p-5 sm:p-6 gap-4"
@@ -111,7 +112,7 @@ export default function HomePage() {
                       <Icon className="h-6 w-6 text-[#d12b8a]" />
                     </div>
                     <div className="text-right">
-                      <h3 className="font-semibold text-base text-[#d12b8a]">
+                      <h3 className="font-semibold text-base text-white">
                         {title}
                       </h3>
                       <p className="text-xs text-[#d12b8a]/70 hidden sm:block">
@@ -130,13 +131,13 @@ export default function HomePage() {
         </div>
 
         {/* Security */}
-        <Card className="p-6 sm:p-7 bg-[#d12b8a]/5 border-[#d12b8a]/30">
+        <Card className="p-6 sm:p-7 bg-[#1f1f1f]/60 border-[#d12b8a]/30">
           <div className="flex items-start gap-4">
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#d12b8a]/10 border border-[#d12b8a]/30">
               <ShieldCheck className="h-5 w-5 text-[#d12b8a]" />
             </div>
             <div className="text-right">
-              <h3 className="font-semibold text-sm mb-2 text-[#d12b8a]">
+              <h3 className="font-semibold text-sm mb-2 text-white">
                 موقع آمن ومحمي
               </h3>
               <p className="text-sm text-[#d12b8a]/80 leading-relaxed">
@@ -167,7 +168,7 @@ export default function HomePage() {
       </main>
 
       {/* Footer */}
-      <footer className="border-t border-[#d12b8a]/30 mt-20 py-8 bg-white/80 backdrop-blur">
+      <footer className="border-t border-[#d12b8a]/30 mt-20 py-8 bg-[#0d0d0d]/70 backdrop-blur">
         <div className="container mx-auto px-4 text-center text-sm text-[#d12b8a]">
           <p>© 2025 جميع الحقوق محفوظة</p>
           <div className="flex items-center justify-center gap-4 mt-4">
