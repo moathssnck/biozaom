@@ -15,14 +15,14 @@ export default function RootLayout({
   return (
     <html lang="en">
          <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXX"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17685063189"></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'AW-XXX');
+              gtag('config', 'AW-17685063189');
             `,
           }}
         />
